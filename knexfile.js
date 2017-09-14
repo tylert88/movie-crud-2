@@ -6,8 +6,8 @@ module.exports = {
     client: 'pg',
     connection: 'postgress://localhost/gmovie'
     },
-    test: {
+    production: {
       client: 'pg',
-      connection: 'postgress://localhost/test-gmovie'
+      connection: process.env.DATABASE_URL
       },
   };
